@@ -1,0 +1,27 @@
+name:PermitEverything
+description: Allow Everything
+:beginDacl
+permit ip any any
+:endDacl
+name:Hackers
+description:Keep out bad hosts
+:beginDacl
+permit ip any host 10.0.0.1
+deny ip any 192.168.0.0 0.0.255.255
+:endDacl
+name:RFC1918
+description:RFC1918 Restricted
+:beginDacl
+permit ip any 192.168.0.0 0.0.255.255
+permit ip any 172.16.0.0 0.31.255.255
+permit ip any 10.0.0.0 0.255.255.255
+deny ip any any
+:endDacl
+name:InternetOnly
+description: Allow only Internet
+:beginDacl
+deny ip any 192.168.0.0 0.0.255.255
+deny ip any 172.16.0.0 0.31.255.255
+deny ip any 10.0.0.0 0.255.255.255
+permit ip any any
+:endDacl

@@ -1,0 +1,24 @@
+name:DaclNameNumber1
+description:Dacl Description
+:beginDacl
+permit ip any any
+deny ip any any
+:endDacl
+name:DaclNameNumber2
+description:Dacl Description
+:beginDacl
+permit ip any any
+deny ip any any
+:endDacl
+name:DaclNameNumber3
+description:Dacl Description
+:beginDacl
+permit ip any any
+deny ip any any
+:endDacl
+name:DaclNameNumber4
+description:Dacl Description
+:beginDacl
+permit ip any any
+deny ip any any
+:endDacl

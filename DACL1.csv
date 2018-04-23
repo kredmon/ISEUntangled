@@ -1,0 +1,26 @@
+name:InternetOnly
+description:Internet Only
+:beginDacl
+deny ip any 10.0.0.0 0.255.255.255
+deny ip any 172.16.0.0 0.31.255.255
+deny ip any 192.168.0.0 0.0.255.255
+permit ip any any
+:endDacl
+name:badguys
+description:second ACL
+:beginDacl
+permit ip any host 192.168.200.10
+deny ip any any
+:endDacl
+name:DaclNameNumber3
+description:Dacl Description
+:beginDacl
+permit ip any any
+deny ip any any
+:endDacl
+name:DaclNameNumber4
+description:Dacl Description
+:beginDacl
+permit ip any any
+deny ip any any
+:endDacl

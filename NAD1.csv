@@ -1,0 +1,3 @@
+name,ip,mask,radiusSharedSecret,NDG1;NDG2;NDG3...
+Switch1,10.1.1.1,32,Cisco123!,Location#All Locations;IPSEC#Is IPSEC Device#No;Device Type#All Device Types
+Switch2,10.1.1.2,32,Cisco123!,Location#All Locations;IPSEC#Is IPSEC Device#No;Device Type#All Device Types
